@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Counter App</title>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="./css/main.css" />
 		<script
@@ -16,38 +16,38 @@
 	<body>
 		<div class="counter-app">
 			<div class="settings active">
-				<h1>settings</h1>
-				<label for="event-name">Event name:</label>
-				<input type="text" id="event-name" value="New Year" />
+				<h1 class="settings__title">settings</h1>
+				<label for="event-name" class="settings__label">Event name:</label>
+				<input type="text" id="event-name" value="New Year" class="settings__input"/>
 				<table class="date">
 					<tr>
-						<td><label for="event-day">Day:</label></td>
-						<td><label for="event-month">Month:</label></td>
-						<td><label for="event-year">Year:</label></td>
+						<td><label for="event-day" class="settings__label">Day:</label></td>
+						<td><label for="event-month" class="settings__label">Month:</label></td>
+						<td><label for="event-year" class="settings__label">Year:</label></td>
 					</tr>
 					<tr>
 						<td>
-							<input type="number" id="event-day" maxlength="2" value="1" />
+							<input type="number" id="event-day" maxlength="2" value="1" class="settings__input"/>
 						</td>
 						<td>
-							<input type="number" id="event-month" maxlength="2" value="1" />
+							<input type="number" id="event-month" maxlength="2" value="1" class="settings__input"/>
 						</td>
 						<td>
-							<input type="number" id="event-year" maxlength="4" value="2024" />
+							<input type="number" id="event-year" maxlength="4" value="2024" class="settings__input"/>
 						</td>
 					</tr>
 				</table>
-				<label for="event-image">Paste a link to the image</label>
-				<input type="text" id="event-image" value="default.jpg" />
-				<button class="save">Save</button>
+				<label for="event-image" class="settings__label">Paste a link to the image</label>
+				<input type="text" id="event-image" value="default.jpg" class="settings__input"/>
+				<button class="save settings__save">Save</button>
 			</div>
 
 			<div class="app-body">
 				<div class="image-section">
-					<div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+					<div class="settings__btn"><i class="fas fa-sliders-h"></i></div>
 				</div>
 				<div class="time-section">
-					<h3><span class="event">New Year</span>in:</h3>
+					<h3><span class="event">New Year</span> in:</h3>
 					<div class="time-cards">
 						<div class="card">
 							<p class="days-count number">1</p>
