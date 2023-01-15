@@ -21,6 +21,7 @@ body {
 
 .counter-app {
   position: relative;
+  color: rgb(46, 46, 46);
 }
 
 .app-body {
@@ -40,20 +41,93 @@ body {
   background-position: center;
   background-size: cover;
 }
-
-.settings__btn {
+.image-section__btn {
   position: absolute;
   top: 20px;
   right: 20px;
   padding: 20px 30px;
   font-size: 3.2rem;
-  background-color: #f9f9f9;
+}
+
+.time-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  background-color: #fff;
+  z-index: 100;
+}
+.time-section__title {
+  font-size: 3rem;
+  text-align: center;
+}
+.time-section__cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 0 30px;
+  width: 18%;
+  text-align: center;
   border: 1px solid black;
   border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  background-image: linear-gradient(#fff 0% 50%, rgb(65, 64, 64) 50% 100%);
 }
-.settings__btn:hover {
+.card__number {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 4.8rem;
+}
+.card__title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4rem;
   color: #f9f9f9;
-  background-color: black;
+  text-transform: uppercase;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 50px 30px;
+  width: 400px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.3s;
+}
+.settings__title {
+  margin-bottom: 30px;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.settings__label {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.settings__input {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 1.4rem;
+}
+.settings__input-date {
+  text-align: center;
+}
+.settings__btn {
+  padding: 10px 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

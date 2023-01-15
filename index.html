@@ -19,7 +19,7 @@
 				<h1 class="settings__title">settings</h1>
 				<label for="event-name" class="settings__label">Event name:</label>
 				<input type="text" id="event-name" value="New Year" class="settings__input"/>
-				<table class="date">
+				<table class="settings__input-date">
 					<tr>
 						<td><label for="event-day" class="settings__label">Day:</label></td>
 						<td><label for="event-month" class="settings__label">Month:</label></td>
@@ -39,31 +39,31 @@
 				</table>
 				<label for="event-image" class="settings__label">Paste a link to the image</label>
 				<input type="text" id="event-image" value="default.jpg" class="settings__input"/>
-				<button class="save settings__save">Save</button>
+				<button class="save settings__btn">Save</button>
 			</div>
 
 			<div class="app-body">
 				<div class="image-section">
-					<div class="settings__btn"><i class="fas fa-sliders-h"></i></div>
+					<div class="image-section__btn"><i class="fas fa-sliders-h"></i></div>
 				</div>
 				<div class="time-section">
-					<h3><span class="event">New Year</span> in:</h3>
-					<div class="time-cards">
+					<h3 class="time-section__title"><span class="event">New Year</span> in:</h3>
+					<div class="time-section__cards">
 						<div class="card">
-							<p class="days-count number">1</p>
-							<p class="card-title">Days</p>
+							<p class="days-count card__number">1</p>
+							<p class="card__title">Days</p>
 						</div>
 						<div class="card">
-							<p class="hours-count number">1</p>
-							<p class="card-title">Hours</p>
+							<p class="hours-count card__number">1</p>
+							<p class="card__title">Hours</p>
 						</div>
 						<div class="card">
-							<p class="minutes-count number">1</p>
-							<p class="card-title">Minutes</p>
+							<p class="minutes-count card__number">1</p>
+							<p class="card__title">Minutes</p>
 						</div>
 						<div class="card">
-							<p class="seconds-count number">1</p>
-							<p class="card-title">Seconds</p>
+							<p class="seconds-count card__number">1</p>
+							<p class="card__title">Seconds</p>
 						</div>
 					</div>
 				</div>
