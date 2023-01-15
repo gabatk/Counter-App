@@ -12,3 +12,11 @@ const minutesCount = document.querySelector('.minutes-count');
 const secondsCount = document.querySelector('.seconds-count');
 const saveBtn = document.querySelector('.save ');
 const eventSpan = document.querySelector('.event ');
+
+let usersTime;
+
+const handleSettings = () => {
+	settings.classList.toggle('active');
+};
+
+settingsBtn.addEventListener('click', handleSettings);
