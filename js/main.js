@@ -19,4 +19,17 @@ const handleSettings = () => {
 	settings.classList.toggle('active');
 };
 
+const updateApp = () => {
+	eventSpan.textContent = eventName.value;
+	if (eventImage.value != 'default.jpg') {
+		imageSection.style.backgroundImage = `url('${eventImage.value}')`;
+	}
+	usersTime = new Date(
+		`${eventMonth.value} ${eventDay.value} ${eventYear.value}`
+	);
+
+	console.log(usersTime);
+};
+
 settingsBtn.addEventListener('click', handleSettings);
+saveBtn.addEventListener('click', updateApp);
