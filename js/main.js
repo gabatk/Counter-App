@@ -19,6 +19,21 @@ const handleSettings = () => {
 	settings.classList.toggle('active');
 };
 
+const setTime = () => {
+	const currentTime = new Date();
+	const result = usersTime - currentTime;
+
+	const days = Math.floor(result / 1000 / 60 / 60 / 24);
+	const hours = Math.floor(result / 1000 / 60 / 60) % 24;
+	const minutes = Math.floor(result / 1000 / 60) % 60;
+	const seconds = Math.floor(result / 1000) % 60;
+
+	daysCount.textContent = days;
+	hoursCount.textContent = hours;
+	minutesCount.textContent = minutes;
+	secondsCount.textContent = seconds;
+};
+
 const updateApp = () => {
 	eventSpan.textContent = eventName.value;
 	if (eventImage.value != 'default.jpg') {
@@ -27,9 +42,11 @@ const updateApp = () => {
 	usersTime = new Date(
 		`${eventMonth.value} ${eventDay.value} ${eventYear.value}`
 	);
-
-	console.log(usersTime);
+	setTime();
 };
+
+updateApp();
+setInterval(setTime, 1000);
 
 settingsBtn.addEventListener('click', handleSettings);
 saveBtn.addEventListener('click', updateApp);
